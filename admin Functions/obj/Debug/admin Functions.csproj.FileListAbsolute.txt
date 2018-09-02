@@ -1,0 +1,61 @@
+D:\HotelManagementSystem\admin Functions\admin Functions\bin\Debug\admin Functions.exe.config
+D:\HotelManagementSystem\admin Functions\admin Functions\bin\Debug\admin Functions.exe
+D:\HotelManagementSystem\admin Functions\admin Functions\bin\Debug\admin Functions.pdb
+D:\HotelManagementSystem\admin Functions\admin Functions\bin\Debug\MetroFramework.Design.dll
+D:\HotelManagementSystem\admin Functions\admin Functions\bin\Debug\MetroFramework.dll
+D:\HotelManagementSystem\admin Functions\admin Functions\bin\Debug\MetroFramework.Fonts.dll
+D:\HotelManagementSystem\admin Functions\admin Functions\bin\Debug\mysql.data.dll
+D:\HotelManagementSystem\admin Functions\admin Functions\bin\Debug\Zen.Barcode.Core.dll
+D:\HotelManagementSystem\admin Functions\admin Functions\obj\Debug\admin Functions.csprojResolveAssemblyReference.cache
+D:\HotelManagementSystem\admin Functions\admin Functions\obj\Debug\AttendanceRecorder.AttendenceRecorder.resources
+D:\HotelManagementSystem\admin Functions\admin Functions\obj\Debug\AttendanceRecorder.ChangePassword.resources
+D:\HotelManagementSystem\admin Functions\admin Functions\obj\Debug\AttendanceRecorder.EmployeeIDPrint.resources
+D:\HotelManagementSystem\admin Functions\admin Functions\obj\Debug\AttendanceRecorder.ManageDrinks.resources
+D:\HotelManagementSystem\admin Functions\admin Functions\obj\Debug\AttendanceRecorder.ManageEmployeePositions.resources
+D:\HotelManagementSystem\admin Functions\admin Functions\obj\Debug\AttendanceRecorder.EmployeeProfile.resources
+D:\HotelManagementSystem\admin Functions\admin Functions\obj\Debug\AttendanceRecorder.Form1.resources
+D:\HotelManagementSystem\admin Functions\admin Functions\obj\Debug\AttendanceRecorder.Login.resources
+D:\HotelManagementSystem\admin Functions\admin Functions\obj\Debug\AttendanceRecorder.ManageRooms.resources
+D:\HotelManagementSystem\admin Functions\admin Functions\obj\Debug\AttendanceRecorder.Properties.Resources.resources
+D:\HotelManagementSystem\admin Functions\admin Functions\obj\Debug\AttendanceRecorder.ScanBarcode.resources
+D:\HotelManagementSystem\admin Functions\admin Functions\obj\Debug\AttendanceRecorder.ScanBarcodeForAttendence.resources
+D:\HotelManagementSystem\admin Functions\admin Functions\obj\Debug\AttendanceRecorder.SendMail.resources
+D:\HotelManagementSystem\admin Functions\admin Functions\obj\Debug\AttendanceRecorder.splashScreen.resources
+D:\HotelManagementSystem\admin Functions\admin Functions\obj\Debug\admin Functions.csproj.GenerateResource.Cache
+D:\HotelManagementSystem\admin Functions\admin Functions\obj\Debug\admin Functions.exe
+D:\HotelManagementSystem\admin Functions\admin Functions\obj\Debug\admin Functions.pdb
+D:\HotelManagementSystem\admin Functions\admin Functions\bin\Debug\PrinterUtility.dll
+D:\HotelManagementSystem\admin Functions\admin Functions\obj\Debug\AttendanceRecorder.billPrint.resources
+D:\HotelManagementSystem\admin Functions\admin Functions\obj\Debug\RdlCompile.cache
+D:\HotelManagementSystem\admin Functions\admin Functions\obj\Debug\RdlCompile.compiled
+D:\HotelManagementSystem\admin Functions\admin Functions\obj\Debug\AttendanceRecorder.EmployeeNotifications.resources
+F:\ITP\Hotel_management\admin Functions\bin\Debug\admin Functions.exe.config
+F:\ITP\Hotel_management\admin Functions\obj\Debug\admin Functions.exe
+F:\ITP\Hotel_management\admin Functions\obj\Debug\admin Functions.pdb
+F:\ITP\Hotel_management\admin Functions\bin\Debug\admin Functions.exe
+F:\ITP\Hotel_management\admin Functions\bin\Debug\admin Functions.pdb
+F:\ITP\Hotel_management\admin Functions\bin\Debug\MetroFramework.Design.dll
+F:\ITP\Hotel_management\admin Functions\bin\Debug\MetroFramework.dll
+F:\ITP\Hotel_management\admin Functions\bin\Debug\MetroFramework.Fonts.dll
+F:\ITP\Hotel_management\admin Functions\bin\Debug\PrinterUtility.dll
+F:\ITP\Hotel_management\admin Functions\bin\Debug\Zen.Barcode.Core.dll
+F:\ITP\Hotel_management\admin Functions\obj\Debug\admin Functions.csprojResolveAssemblyReference.cache
+F:\ITP\Hotel_management\admin Functions\obj\Debug\AttendanceRecorder.AttendenceRecorder.resources
+F:\ITP\Hotel_management\admin Functions\obj\Debug\AttendanceRecorder.billPrint.resources
+F:\ITP\Hotel_management\admin Functions\obj\Debug\AttendanceRecorder.ChangePassword.resources
+F:\ITP\Hotel_management\admin Functions\obj\Debug\AttendanceRecorder.EmployeeIDPrint.resources
+F:\ITP\Hotel_management\admin Functions\obj\Debug\AttendanceRecorder.EmployeeNotifications.resources
+F:\ITP\Hotel_management\admin Functions\obj\Debug\AttendanceRecorder.ManageDrinks.resources
+F:\ITP\Hotel_management\admin Functions\obj\Debug\AttendanceRecorder.ManageEmployeePositions.resources
+F:\ITP\Hotel_management\admin Functions\obj\Debug\AttendanceRecorder.EmployeeProfile.resources
+F:\ITP\Hotel_management\admin Functions\obj\Debug\AttendanceRecorder.Form1.resources
+F:\ITP\Hotel_management\admin Functions\obj\Debug\AttendanceRecorder.Login.resources
+F:\ITP\Hotel_management\admin Functions\obj\Debug\AttendanceRecorder.ManageRooms.resources
+F:\ITP\Hotel_management\admin Functions\obj\Debug\AttendanceRecorder.Properties.Resources.resources
+F:\ITP\Hotel_management\admin Functions\obj\Debug\AttendanceRecorder.ScanBarcode.resources
+F:\ITP\Hotel_management\admin Functions\obj\Debug\AttendanceRecorder.ScanBarcodeForAttendence.resources
+F:\ITP\Hotel_management\admin Functions\obj\Debug\AttendanceRecorder.SendMail.resources
+F:\ITP\Hotel_management\admin Functions\obj\Debug\AttendanceRecorder.splashScreen.resources
+F:\ITP\Hotel_management\admin Functions\obj\Debug\admin Functions.csproj.GenerateResource.Cache
+F:\ITP\Hotel_management\admin Functions\obj\Debug\RdlCompile.cache
+F:\ITP\Hotel_management\admin Functions\obj\Debug\RdlCompile.compiled
