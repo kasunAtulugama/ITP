@@ -59,3 +59,6 @@ F:\ITP\Hotel_management\admin Functions\obj\Debug\AttendanceRecorder.splashScree
 F:\ITP\Hotel_management\admin Functions\obj\Debug\admin Functions.csproj.GenerateResource.Cache
 F:\ITP\Hotel_management\admin Functions\obj\Debug\RdlCompile.cache
 F:\ITP\Hotel_management\admin Functions\obj\Debug\RdlCompile.compiled
+D:\GIT_ITP\admin Functions\bin\Debug\admin Functions.exe.config
+D:\GIT_ITP\admin Functions\obj\Debug\admin Functions.exe
+D:\GIT_ITP\admin Functions\obj\Debug\admin Functions.pdb

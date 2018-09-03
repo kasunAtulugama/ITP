@@ -165,10 +165,12 @@ namespace AttendanceRecorder
             {
                 e.Handled = true;
             }
+            
         }
 
         private void tileManageEmployee_Click(object sender, EventArgs e)
         {
+            Console.WriteLine("test");
             pnlManageEmployee.BringToFront();
             pnlEmployeeAttendance.Hide();
             pnlManageEmployee.Show();
