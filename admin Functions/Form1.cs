@@ -170,7 +170,7 @@ namespace AttendanceRecorder
 
         private void tileManageEmployee_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("test");
+            Console.WriteLine("testhjgvjgfh");
             pnlManageEmployee.BringToFront();
             pnlEmployeeAttendance.Hide();
             pnlManageEmployee.Show();
