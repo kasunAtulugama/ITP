@@ -63,6 +63,16 @@ namespace AttendanceRecorder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _168_128 {
+            get {
+                object obj = ResourceManager.GetObject("168-128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Capture {
             get {
                 object obj = ResourceManager.GetObject("Capture", resourceCulture);
@@ -86,6 +96,56 @@ namespace AttendanceRecorder.Properties {
         internal static System.Drawing.Bitmap icons8_alarm_96 {
             get {
                 object obj = ResourceManager.GetObject("icons8-alarm-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_bell_17 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-bell-17", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_bell_25 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-bell-25", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_bell_25__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-bell-25 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_bell_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-bell-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_exit_25__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-exit-25 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

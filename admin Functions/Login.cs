@@ -78,6 +78,11 @@ namespace AttendanceRecorder
             }
         }
 
+        private void txtEmployeeID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
  
 
 

@@ -312,6 +312,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Dapino-Summer-Holiday-Hotel.ico" />
+    <None Include="Resources\icons8-bell-25 %281%29.png" />
+    <None Include="Resources\168-128.png" />
+    <None Include="Resources\icons8-bell-50.png" />
+    <None Include="Resources\icons8-bell-25.png" />
+    <None Include="Resources\icons8-bell-17.png" />
+    <None Include="Resources\icons8-exit-25 %281%29.png" />
     <None Include="Resources\icons8-alarm-96.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

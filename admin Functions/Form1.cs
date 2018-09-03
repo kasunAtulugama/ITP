@@ -91,10 +91,12 @@ namespace AttendanceRecorder
                 if (count == 0)
                 {
                     imgNotification.Visible = false;
+                    btnMyProfile.TextAlign = ContentAlignment.MiddleCenter;
                 }
                 else
                 {
                     imgNotification.Visible = true;
+                    btnMyProfile.TextAlign = ContentAlignment.MiddleCenter;
                 }
             }
         }
@@ -825,6 +827,16 @@ namespace AttendanceRecorder
         {
             EmployeeNotifications f = new EmployeeNotifications(loggedEmployeeID);
             f.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(1);
+        }
+
+        private void btnRejected_Click(object sender, EventArgs e)
+        {
+
         }
 
     }

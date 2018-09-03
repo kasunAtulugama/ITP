@@ -59,25 +59,27 @@
             // txtEmployeeID
             // 
             this.txtEmployeeID.Location = new System.Drawing.Point(159, 61);
-            this.txtEmployeeID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmployeeID.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmployeeID.Name = "txtEmployeeID";
             this.txtEmployeeID.Size = new System.Drawing.Size(170, 20);
             this.txtEmployeeID.TabIndex = 0;
+            this.txtEmployeeID.Text = "10000011";
+            this.txtEmployeeID.TextChanged += new System.EventHandler(this.txtEmployeeID_TextChanged);
             // 
             // txtpassword
             // 
             this.txtpassword.Location = new System.Drawing.Point(159, 87);
-            this.txtpassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtpassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.PasswordChar = '☻';
             this.txtpassword.Size = new System.Drawing.Size(170, 20);
             this.txtpassword.TabIndex = 1;
-        
+            this.txtpassword.Text = "1234";
             // 
             // btnLogin
             // 
             this.btnLogin.Location = new System.Drawing.Point(211, 122);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(56, 24);
             this.btnLogin.TabIndex = 2;
@@ -88,7 +90,7 @@
             // btnClear
             // 
             this.btnClear.Location = new System.Drawing.Point(272, 122);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(56, 24);
             this.btnClear.TabIndex = 3;
@@ -106,9 +108,9 @@
             this.Controls.Add(this.txtEmployeeID);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Login";
-            this.Padding = new System.Windows.Forms.Padding(15, 49, 15, 16);
+            this.Padding = new System.Windows.Forms.Padding(15, 60, 15, 16);
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
