@@ -46,20 +46,23 @@
             // 
             // picEmployeepic
             // 
-            this.picEmployeepic.Location = new System.Drawing.Point(121, 123);
+            this.picEmployeepic.Location = new System.Drawing.Point(101, 100);
+            this.picEmployeepic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picEmployeepic.Name = "picEmployeepic";
-            this.picEmployeepic.Size = new System.Drawing.Size(152, 200);
+            this.picEmployeepic.Size = new System.Drawing.Size(114, 162);
             this.picEmployeepic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picEmployeepic.TabIndex = 0;
             this.picEmployeepic.TabStop = false;
+            this.picEmployeepic.Click += new System.EventHandler(this.picEmployeepic_Click);
             // 
             // lblEmployeeID
             // 
             this.lblEmployeeID.AutoSize = true;
             this.lblEmployeeID.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmployeeID.Location = new System.Drawing.Point(195, 345);
+            this.lblEmployeeID.Location = new System.Drawing.Point(133, 280);
+            this.lblEmployeeID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmployeeID.Name = "lblEmployeeID";
-            this.lblEmployeeID.Size = new System.Drawing.Size(159, 24);
+            this.lblEmployeeID.Size = new System.Drawing.Size(126, 19);
             this.lblEmployeeID.TabIndex = 1;
             this.lblEmployeeID.Text = "<<Employee ID >>";
             this.lblEmployeeID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -69,9 +72,10 @@
             // 
             this.lblEmployeeName.AutoSize = true;
             this.lblEmployeeName.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmployeeName.Location = new System.Drawing.Point(195, 382);
+            this.lblEmployeeName.Location = new System.Drawing.Point(133, 310);
+            this.lblEmployeeName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmployeeName.Name = "lblEmployeeName";
-            this.lblEmployeeName.Size = new System.Drawing.Size(170, 23);
+            this.lblEmployeeName.Size = new System.Drawing.Size(138, 18);
             this.lblEmployeeName.TabIndex = 2;
             this.lblEmployeeName.Text = "<<Employee Name>>";
             this.lblEmployeeName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -79,60 +83,71 @@
             // 
             // picBarcode
             // 
-            this.picBarcode.Location = new System.Drawing.Point(140, 423);
+            this.picBarcode.Location = new System.Drawing.Point(32, 344);
+            this.picBarcode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picBarcode.Name = "picBarcode";
             this.picBarcode.Size = new System.Drawing.Size(253, 56);
             this.picBarcode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.picBarcode.TabIndex = 3;
             this.picBarcode.TabStop = false;
+            this.picBarcode.Click += new System.EventHandler(this.picBarcode_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(103, 72);
+            this.label1.Location = new System.Drawing.Point(77, 58);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(204, 26);
+            this.label1.Size = new System.Drawing.Size(163, 22);
             this.label1.TabIndex = 4;
             this.label1.Text = "Employee ID Card";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(25, 34);
+            this.label2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(31, 28);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(340, 26);
+            this.label2.Size = new System.Drawing.Size(254, 23);
             this.label2.TabIndex = 5;
             this.label2.Text = "The Regent Country Club Hotel";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(63, 345);
+            this.label3.Location = new System.Drawing.Point(31, 280);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(126, 24);
+            this.label3.Size = new System.Drawing.Size(98, 19);
             this.label3.TabIndex = 6;
             this.label3.Text = "Employee No:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(38, 381);
+            this.label4.Location = new System.Drawing.Point(11, 310);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(151, 24);
+            this.label4.Size = new System.Drawing.Size(118, 19);
             this.label4.TabIndex = 7;
             this.label4.Text = "Employee Name:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // btnPrint
             // 
-            this.btnPrint.Location = new System.Drawing.Point(139, 506);
+            this.btnPrint.Location = new System.Drawing.Point(120, 411);
+            this.btnPrint.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(103, 32);
+            this.btnPrint.Size = new System.Drawing.Size(77, 26);
             this.btnPrint.TabIndex = 8;
             this.btnPrint.Text = "Print";
             this.btnPrint.UseVisualStyleBackColor = true;
@@ -155,9 +170,9 @@
             // 
             // EmployeeIDPrint
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(401, 543);
+            this.ClientSize = new System.Drawing.Size(301, 441);
             this.ControlBox = false;
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.label4);
@@ -168,7 +183,9 @@
             this.Controls.Add(this.lblEmployeeName);
             this.Controls.Add(this.lblEmployeeID);
             this.Controls.Add(this.picEmployeepic);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "EmployeeIDPrint";
+            this.Padding = new System.Windows.Forms.Padding(15, 49, 15, 16);
             this.Resizable = false;
             this.Text = "b";
             this.Load += new System.EventHandler(this.EmployeeIDPrint_Load);

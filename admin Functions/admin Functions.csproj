@@ -312,6 +312,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Dapino-Summer-Holiday-Hotel.ico" />
+    <None Include="Resources\icons8-user-filled-25.png" />
+    <None Include="Resources\icons8-user-40.png" />
     <None Include="Resources\icons8-bell-25 %281%29.png" />
     <None Include="Resources\168-128.png" />
     <None Include="Resources\icons8-bell-50.png" />
