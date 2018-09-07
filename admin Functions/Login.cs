@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using System.Threading;
+using System.Net;
 
 namespace AttendanceRecorder
 {
@@ -31,45 +32,68 @@ namespace AttendanceRecorder
         {
             try
             {
-                DBConnect db = new DBConnect();
-
-                String q = "SELECT * FROM employee WHERE employeeNo  ='" + txtEmployeeID.Text + "'";
-                MySqlCommand cmd = new MySqlCommand(q, db.con);
-                MySqlDataReader r = cmd.ExecuteReader();
-
-                if (r.HasRows)
+                using (DBConnect db = new DBConnect())
                 {
-                    while (r.Read())
+                    
+
+                    String q = "SELECT * FROM employee WHERE employeeNo  ='" + txtEmployeeID.Text + "'";
+                    MySqlCommand cmd = new MySqlCommand(q, db.con);
+                    MySqlDataReader r = cmd.ExecuteReader();
+
+                    if (r.HasRows)
                     {
-                        String user = r["name"].ToString();
-                        String password = r["password"].ToString();
-                        Console.WriteLine(password);
-                        String jobRole = r["jobRole"].ToString();
-                        Console.WriteLine(jobRole);
-                        Console.WriteLine();
-                        if (en.EncryptString(txtpassword.Text).Equals(password))
+                        while (r.Read())
                         {
-                            if (jobRole.Equals("Manager"))
+                            String user = r["name"].ToString();
+                            String password = r["password"].ToString();
+                            Console.WriteLine(password);
+                            String jobRole = r["jobRole"].ToString();
+                            Console.WriteLine(jobRole);
+                            Console.WriteLine();
+                            if (en.EncryptString(txtpassword.Text).Equals(password))
                             {
-                                Form1 f = new Form1(user,jobRole,txtEmployeeID.Text);
-                                f.Show();
-                                this.Hide();
+                                if (jobRole.Equals("Manager"))
+                                {
+                                    Form1 f = new Form1(user, jobRole, txtEmployeeID.Text);
+                                    f.Show();
+                                    this.Hide();
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Incorrect Password. Please check and try again", "Sorry..", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                             }
                         }
-                        else
-                        {
-                            MessageBox.Show("Incorrect Password. Please check and try again", "Sorry..", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                        }
-                    } 
-                    
-                    
-                }
-                else
-                {
 
-                    MessageBox.Show("Incorrect Username. Please check and try again", "Sorry..", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            
+
+                    }
+                    else
+                    {
+
+                        MessageBox.Show("Incorrect Username. Please check and try again", "Sorry..", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                    } 
                 }
+                using (DBConnect db = new DBConnect())
+                {
+                     IPHostEntry host;
+            String myIp = "";
+            host = Dns.GetHostEntry(Dns.GetHostName());
+
+            foreach (IPAddress ip in host.AddressList)
+            {
+                if (ip.AddressFamily.ToString() == "InterNetwork")
+                {
+                    myIp = ip.ToString();
+                    MessageBox.Show(myIp);
+                }
+            }
+
+            String q = "INSERT INTO `userip`(`employeeNo`, `ip`) VALUES ('" + txtEmployeeID.Text + "','" + myIp + "') ON DUPLICATE KEY UPDATE ip = '"+myIp+"'";
+            MySqlCommand cmd = new MySqlCommand(q, db.con);
+            cmd.ExecuteNonQuery();
+                }
+
             }
             catch ( Exception ex)
             {

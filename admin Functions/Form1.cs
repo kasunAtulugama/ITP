@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Globalization;
 using System.IO;
@@ -844,6 +845,18 @@ namespace AttendanceRecorder
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnChatRoom_Click(object sender, EventArgs e)
+        {
+            ChatRoom c = new ChatRoom(loggedEmployeeID);
+            c.Show();
+        }
+
+        private void btnWeb_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo sInfo = new ProcessStartInfo("https://www.theregent.lk/");
+            Process.Start(sInfo);
         }
 
     }
