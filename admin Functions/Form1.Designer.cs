@@ -603,6 +603,7 @@
             this.btnAttendancToday.TabIndex = 43;
             this.btnAttendancToday.Text = "Find today\'s attendance";
             this.btnAttendancToday.UseVisualStyleBackColor = true;
+            this.btnAttendancToday.Click += new System.EventHandler(this.btnAttendancToday_Click);
             // 
             // dgv
             // 
@@ -661,9 +662,9 @@
             // 
             this.txttoDate.Location = new System.Drawing.Point(703, 96);
             this.txttoDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txttoDate.MinimumSize = new System.Drawing.Size(4, 29);
+            this.txttoDate.MinimumSize = new System.Drawing.Size(0, 30);
             this.txttoDate.Name = "txttoDate";
-            this.txttoDate.Size = new System.Drawing.Size(321, 29);
+            this.txttoDate.Size = new System.Drawing.Size(321, 30);
             this.txttoDate.TabIndex = 39;
             // 
             // label11
@@ -681,9 +682,9 @@
             // 
             this.txtFromDate.Location = new System.Drawing.Point(213, 94);
             this.txtFromDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtFromDate.MinimumSize = new System.Drawing.Size(4, 29);
+            this.txtFromDate.MinimumSize = new System.Drawing.Size(0, 30);
             this.txtFromDate.Name = "txtFromDate";
-            this.txtFromDate.Size = new System.Drawing.Size(321, 29);
+            this.txtFromDate.Size = new System.Drawing.Size(321, 30);
             this.txtFromDate.TabIndex = 37;
             // 
             // label10
@@ -727,19 +728,22 @@
             // 
             // txtEmpName
             // 
+            this.txtEmpName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txtEmpName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtEmpName.BackColor = System.Drawing.Color.White;
             this.txtEmpName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmpName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmpName.ForeColor = System.Drawing.Color.Black;
-            this.txtEmpName.Location = new System.Drawing.Point(213, 30);
+            this.txtEmpName.Location = new System.Drawing.Point(213, 43);
             this.txtEmpName.Margin = new System.Windows.Forms.Padding(27, 39, 27, 25);
             this.txtEmpName.MaximumSize = new System.Drawing.Size(444, 160);
             this.txtEmpName.MinimumSize = new System.Drawing.Size(0, 16);
-            this.txtEmpName.Multiline = true;
             this.txtEmpName.Name = "txtEmpName";
-            this.txtEmpName.Size = new System.Drawing.Size(323, 41);
+            this.txtEmpName.Size = new System.Drawing.Size(323, 19);
             this.txtEmpName.TabIndex = 33;
             this.txtEmpName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEmpName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtEmpName_KeyDown);
+            this.txtEmpName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEmpName_KeyPress);
             // 
             // button3
             // 
@@ -835,9 +839,9 @@
             // 
             this.metroDateTime5.Location = new System.Drawing.Point(227, 116);
             this.metroDateTime5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.metroDateTime5.MinimumSize = new System.Drawing.Size(4, 29);
+            this.metroDateTime5.MinimumSize = new System.Drawing.Size(0, 30);
             this.metroDateTime5.Name = "metroDateTime5";
-            this.metroDateTime5.Size = new System.Drawing.Size(305, 29);
+            this.metroDateTime5.Size = new System.Drawing.Size(305, 30);
             this.metroDateTime5.TabIndex = 49;
             // 
             // label15
@@ -1232,7 +1236,7 @@
             this.groupBox1.Location = new System.Drawing.Point(39, 11);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(971, 370);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
@@ -1249,7 +1253,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Red;
             this.button1.Location = new System.Drawing.Point(1779, 2);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(35, 23);
             this.button1.TabIndex = 52;
@@ -1265,7 +1269,7 @@
             this.tileManageEmployee.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tileManageEmployee.ForeColor = System.Drawing.Color.White;
             this.tileManageEmployee.Location = new System.Drawing.Point(35, 98);
-            this.tileManageEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tileManageEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.tileManageEmployee.Name = "tileManageEmployee";
             this.tileManageEmployee.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.tileManageEmployee.Size = new System.Drawing.Size(360, 82);
@@ -1282,7 +1286,7 @@
             this.tileEmployeeAttendance.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tileEmployeeAttendance.ForeColor = System.Drawing.Color.White;
             this.tileEmployeeAttendance.Location = new System.Drawing.Point(35, 188);
-            this.tileEmployeeAttendance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tileEmployeeAttendance.Margin = new System.Windows.Forms.Padding(4);
             this.tileEmployeeAttendance.Name = "tileEmployeeAttendance";
             this.tileEmployeeAttendance.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.tileEmployeeAttendance.Size = new System.Drawing.Size(360, 82);
@@ -1299,7 +1303,7 @@
             this.tileDetailsofCurrentCustomer.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tileDetailsofCurrentCustomer.ForeColor = System.Drawing.Color.White;
             this.tileDetailsofCurrentCustomer.Location = new System.Drawing.Point(35, 281);
-            this.tileDetailsofCurrentCustomer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tileDetailsofCurrentCustomer.Margin = new System.Windows.Forms.Padding(4);
             this.tileDetailsofCurrentCustomer.Name = "tileDetailsofCurrentCustomer";
             this.tileDetailsofCurrentCustomer.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.tileDetailsofCurrentCustomer.Size = new System.Drawing.Size(360, 82);
@@ -1316,7 +1320,7 @@
             this.tileEmployeeLeaveRequests.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tileEmployeeLeaveRequests.ForeColor = System.Drawing.Color.White;
             this.tileEmployeeLeaveRequests.Location = new System.Drawing.Point(35, 372);
-            this.tileEmployeeLeaveRequests.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tileEmployeeLeaveRequests.Margin = new System.Windows.Forms.Padding(4);
             this.tileEmployeeLeaveRequests.Name = "tileEmployeeLeaveRequests";
             this.tileEmployeeLeaveRequests.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.tileEmployeeLeaveRequests.Size = new System.Drawing.Size(360, 82);
@@ -1333,7 +1337,7 @@
             this.btnManageRooms.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageRooms.ForeColor = System.Drawing.Color.White;
             this.btnManageRooms.Location = new System.Drawing.Point(35, 465);
-            this.btnManageRooms.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnManageRooms.Margin = new System.Windows.Forms.Padding(4);
             this.btnManageRooms.Name = "btnManageRooms";
             this.btnManageRooms.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnManageRooms.Size = new System.Drawing.Size(360, 82);
@@ -1350,7 +1354,7 @@
             this.metroTile1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.metroTile1.ForeColor = System.Drawing.Color.White;
             this.metroTile1.Location = new System.Drawing.Point(35, 559);
-            this.metroTile1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroTile1.Margin = new System.Windows.Forms.Padding(4);
             this.metroTile1.Name = "metroTile1";
             this.metroTile1.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.metroTile1.Size = new System.Drawing.Size(360, 82);
@@ -1367,7 +1371,7 @@
             this.button7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.Location = new System.Drawing.Point(35, 652);
-            this.button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
             this.button7.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.button7.Size = new System.Drawing.Size(360, 82);
@@ -1383,7 +1387,7 @@
             this.button8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.White;
             this.button8.Location = new System.Drawing.Point(35, 746);
-            this.button8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button8.Margin = new System.Windows.Forms.Padding(4);
             this.button8.Name = "button8";
             this.button8.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.button8.Size = new System.Drawing.Size(360, 82);
@@ -1399,7 +1403,7 @@
             this.button9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.White;
             this.button9.Location = new System.Drawing.Point(35, 838);
-            this.button9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button9.Margin = new System.Windows.Forms.Padding(4);
             this.button9.Name = "button9";
             this.button9.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.button9.Size = new System.Drawing.Size(360, 82);
@@ -1493,11 +1497,9 @@
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(1816, 940);
             this.ControlBox = false;
+            this.Controls.Add(this.pnlEmployeeAttendance);
             this.Controls.Add(this.btnWeb);
             this.Controls.Add(this.btnChatRoom);
-            this.Controls.Add(this.pnlManageEmployee);
-            this.Controls.Add(this.pnlEmployeeAttendance);
-            this.Controls.Add(this.pnlViewDetailsofCustomers);
             this.Controls.Add(this.pnlLeaveRequests);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -1515,6 +1517,8 @@
             this.Controls.Add(this.pnlWelcome);
             this.Controls.Add(this.btnMyProfile);
             this.Controls.Add(this.lblLoggedas);
+            this.Controls.Add(this.pnlManageEmployee);
+            this.Controls.Add(this.pnlViewDetailsofCustomers);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";

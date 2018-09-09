@@ -203,6 +203,24 @@ namespace AttendanceRecorder
             pnlManageEmployee.Hide();
             pnlViewDetailsofCustomers.Hide();
 
+            txtEmpName.AutoCompleteCustomSource = loadNames();
+            
+        }
+        public AutoCompleteStringCollection loadNames()
+        {
+            AutoCompleteStringCollection names = new AutoCompleteStringCollection();
+            using (DBConnect db = new DBConnect())
+            {
+                String q = "select name from employee";
+                MySqlCommand cmd = new MySqlCommand(q, db.con);
+                MySqlDataReader r = cmd.ExecuteReader();
+
+                while (r.Read())
+                {
+                    names.Add(r[0].ToString());
+                }
+                return names;
+            }
         }
 
         private void tileDetailsofCurrentCustomer_Click(object sender, EventArgs e)
@@ -857,6 +875,47 @@ namespace AttendanceRecorder
         {
             ProcessStartInfo sInfo = new ProcessStartInfo("https://www.theregent.lk/");
             Process.Start(sInfo);
+        }
+
+        private void btnAttendancToday_Click(object sender, EventArgs e)
+        {
+            dgv.DataSource = loadTodaysAttendence();
+        }
+        private DataTable loadTodaysAttendence()
+        {
+            DataTable dt = new DataTable();
+            DBConnect db = new DBConnect();
+
+            String q = "select a.No,e.employeeNo as 'Employee ID',e.name as 'Name',a.date as 'Date',a.inTime as 'IN Time',a.outTime as 'Out Time',TIMEDIFF(a.outTime,a.inTime) as 'Time Worked'  from employee_attendance a, employee e where e.employeeNo = a.employeeNo and a.date = '"+DateTime.Today.ToString("yyyy-MM-dd")+"'";
+            MySqlCommand cmd = new MySqlCommand(q, db.con);
+            MySqlDataReader reader = cmd.ExecuteReader();
+
+
+            dt.Load(reader);
+            return dt;
+        }
+
+        private void txtEmpName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void txtEmpName_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Tab)
+            {
+                String q = "select employeeNo from employee where name = '"+txtEmpName.Text+"'";
+                using (DBConnect db = new DBConnect())
+                {
+                    MySqlCommand cmd = new MySqlCommand(q, db.con);
+                    MySqlDataReader r = cmd.ExecuteReader();
+
+                    while (r.Read())
+                    {
+                        txtEmpNo.Text = r[0].ToString();
+                    }
+                }
+            }
         }
 
     }
