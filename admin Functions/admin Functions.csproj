@@ -321,6 +321,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Dapino-Summer-Holiday-Hotel.ico" />
+    <None Include="Resources\icnBack.png" />
     <None Include="Resources\icons8-google-web-search-24.png" />
     <None Include="Resources\icons8-user-filled-25.png" />
     <None Include="Resources\icons8-user-40.png" />

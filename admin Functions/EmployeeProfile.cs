@@ -12,7 +12,7 @@ using System.IO;
 
 namespace AttendanceRecorder
 {
-    public partial class EmployeeProfile : MetroFramework.Forms.MetroForm
+    public partial class EmployeeProfile : Form
     {
 
         String employeeID = null;
@@ -299,6 +299,11 @@ namespace AttendanceRecorder
                     MessageBox.Show("Leave requested successfully.Please wait for the response", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 } 
             }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
 
