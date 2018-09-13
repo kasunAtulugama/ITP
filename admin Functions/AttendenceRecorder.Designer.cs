@@ -35,10 +35,9 @@
             // btnIn
             // 
             this.btnIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIn.Location = new System.Drawing.Point(112, 78);
-            this.btnIn.Margin = new System.Windows.Forms.Padding(4);
+            this.btnIn.Location = new System.Drawing.Point(84, 67);
             this.btnIn.Name = "btnIn";
-            this.btnIn.Size = new System.Drawing.Size(240, 224);
+            this.btnIn.Size = new System.Drawing.Size(180, 182);
             this.btnIn.TabIndex = 1;
             this.btnIn.Text = "IN";
             this.btnIn.UseVisualStyleBackColor = true;
@@ -47,10 +46,9 @@
             // btnOut
             // 
             this.btnOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOut.Location = new System.Drawing.Point(360, 82);
-            this.btnOut.Margin = new System.Windows.Forms.Padding(4);
+            this.btnOut.Location = new System.Drawing.Point(270, 67);
             this.btnOut.Name = "btnOut";
-            this.btnOut.Size = new System.Drawing.Size(240, 224);
+            this.btnOut.Size = new System.Drawing.Size(180, 182);
             this.btnOut.TabIndex = 2;
             this.btnOut.Text = "Out";
             this.btnOut.UseVisualStyleBackColor = true;
@@ -58,14 +56,12 @@
             // 
             // AttendenceRecorder
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(740, 321);
+            this.ClientSize = new System.Drawing.Size(575, 311);
             this.Controls.Add(this.btnOut);
             this.Controls.Add(this.btnIn);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AttendenceRecorder";
-            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Text = "AttendenceRecorder";
             this.ResumeLayout(false);
 

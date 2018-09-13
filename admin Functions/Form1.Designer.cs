@@ -33,24 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pnlManageEmployee = new System.Windows.Forms.Panel();
-            this.pnlEmployeeAttendance = new System.Windows.Forms.Panel();
-            this.btnUpdateRemark = new System.Windows.Forms.Button();
-            this.label17 = new System.Windows.Forms.Label();
-            this.txtRemark = new System.Windows.Forms.TextBox();
-            this.btnAttendancToday = new System.Windows.Forms.Button();
-            this.dgv = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txttoDate = new MetroFramework.Controls.MetroDateTime();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txtFromDate = new MetroFramework.Controls.MetroDateTime();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtEmpNo = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtEmpName = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.btnFindAttendence = new System.Windows.Forms.Button();
-            this.btnScan = new System.Windows.Forms.Button();
             this.btnScan1 = new MetroFramework.Controls.MetroButton();
             this.txtpicpath = new System.Windows.Forms.TextBox();
             this.picEmployeePicture = new System.Windows.Forms.PictureBox();
@@ -77,6 +59,23 @@
             this.txtEmployeeAddress = new System.Windows.Forms.TextBox();
             this.txtEmployeeNIC = new System.Windows.Forms.TextBox();
             this.txtEmployeeName = new System.Windows.Forms.TextBox();
+            this.pnlEmployeeAttendance = new System.Windows.Forms.Panel();
+            this.btnUpdateRemark = new System.Windows.Forms.Button();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txtRemark = new System.Windows.Forms.TextBox();
+            this.btnAttendancToday = new System.Windows.Forms.Button();
+            this.dgv = new System.Windows.Forms.DataGridView();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txttoDate = new MetroFramework.Controls.MetroDateTime();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtFromDate = new MetroFramework.Controls.MetroDateTime();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtEmpNo = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtEmpName = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.btnFindAttendence = new System.Windows.Forms.Button();
             this.pnlViewDetailsofCustomers = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
@@ -132,9 +131,9 @@
             this.pnlWelcome = new System.Windows.Forms.Panel();
             this.btnMyProfile = new System.Windows.Forms.Button();
             this.pnlManageEmployee.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picEmployeePicture)).BeginInit();
             this.pnlEmployeeAttendance.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEmployeePicture)).BeginInit();
             this.pnlViewDetailsofCustomers.SuspendLayout();
             this.pnlLeaveRequests.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLeaverequests)).BeginInit();
@@ -145,7 +144,6 @@
             // pnlManageEmployee
             // 
             this.pnlManageEmployee.BackColor = System.Drawing.Color.PowderBlue;
-            this.pnlManageEmployee.Controls.Add(this.btnScan);
             this.pnlManageEmployee.Controls.Add(this.btnScan1);
             this.pnlManageEmployee.Controls.Add(this.txtpicpath);
             this.pnlManageEmployee.Controls.Add(this.picEmployeePicture);
@@ -178,263 +176,6 @@
             this.pnlManageEmployee.Name = "pnlManageEmployee";
             this.pnlManageEmployee.Size = new System.Drawing.Size(1019, 664);
             this.pnlManageEmployee.TabIndex = 0;
-            // 
-            // pnlEmployeeAttendance
-            // 
-            this.pnlEmployeeAttendance.BackColor = System.Drawing.Color.PowderBlue;
-            this.pnlEmployeeAttendance.Controls.Add(this.btnUpdateRemark);
-            this.pnlEmployeeAttendance.Controls.Add(this.label17);
-            this.pnlEmployeeAttendance.Controls.Add(this.txtRemark);
-            this.pnlEmployeeAttendance.Controls.Add(this.btnAttendancToday);
-            this.pnlEmployeeAttendance.Controls.Add(this.dgv);
-            this.pnlEmployeeAttendance.Controls.Add(this.button2);
-            this.pnlEmployeeAttendance.Controls.Add(this.label12);
-            this.pnlEmployeeAttendance.Controls.Add(this.txttoDate);
-            this.pnlEmployeeAttendance.Controls.Add(this.label11);
-            this.pnlEmployeeAttendance.Controls.Add(this.txtFromDate);
-            this.pnlEmployeeAttendance.Controls.Add(this.label10);
-            this.pnlEmployeeAttendance.Controls.Add(this.txtEmpNo);
-            this.pnlEmployeeAttendance.Controls.Add(this.label9);
-            this.pnlEmployeeAttendance.Controls.Add(this.txtEmpName);
-            this.pnlEmployeeAttendance.Controls.Add(this.button3);
-            this.pnlEmployeeAttendance.Controls.Add(this.btnFindAttendence);
-            this.pnlEmployeeAttendance.Location = new System.Drawing.Point(319, 82);
-            this.pnlEmployeeAttendance.Margin = new System.Windows.Forms.Padding(2);
-            this.pnlEmployeeAttendance.Name = "pnlEmployeeAttendance";
-            this.pnlEmployeeAttendance.Size = new System.Drawing.Size(1019, 667);
-            this.pnlEmployeeAttendance.TabIndex = 34;
-            // 
-            // btnUpdateRemark
-            // 
-            this.btnUpdateRemark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateRemark.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdateRemark.Location = new System.Drawing.Point(863, 171);
-            this.btnUpdateRemark.Margin = new System.Windows.Forms.Padding(2);
-            this.btnUpdateRemark.Name = "btnUpdateRemark";
-            this.btnUpdateRemark.Size = new System.Drawing.Size(129, 35);
-            this.btnUpdateRemark.TabIndex = 46;
-            this.btnUpdateRemark.Text = "Update remark";
-            this.btnUpdateRemark.UseVisualStyleBackColor = true;
-            this.btnUpdateRemark.Click += new System.EventHandler(this.btnUpdateRemark_Click);
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(34, 182);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(100, 16);
-            this.label17.TabIndex = 45;
-            this.label17.Text = "Add remarks";
-            // 
-            // txtRemark
-            // 
-            this.txtRemark.Location = new System.Drawing.Point(218, 171);
-            this.txtRemark.Margin = new System.Windows.Forms.Padding(2);
-            this.txtRemark.Multiline = true;
-            this.txtRemark.Name = "txtRemark";
-            this.txtRemark.Size = new System.Drawing.Size(620, 35);
-            this.txtRemark.TabIndex = 44;
-            // 
-            // btnAttendancToday
-            // 
-            this.btnAttendancToday.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAttendancToday.ForeColor = System.Drawing.Color.Black;
-            this.btnAttendancToday.Location = new System.Drawing.Point(527, 124);
-            this.btnAttendancToday.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAttendancToday.Name = "btnAttendancToday";
-            this.btnAttendancToday.Size = new System.Drawing.Size(465, 37);
-            this.btnAttendancToday.TabIndex = 43;
-            this.btnAttendancToday.Text = "Find today\'s attendance";
-            this.btnAttendancToday.UseVisualStyleBackColor = true;
-            // 
-            // dgv
-            // 
-            this.dgv.AllowUserToAddRows = false;
-            this.dgv.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.NullValue = null;
-            this.dgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv.BackgroundColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv.Location = new System.Drawing.Point(29, 228);
-            this.dgv.Margin = new System.Windows.Forms.Padding(2);
-            this.dgv.Name = "dgv";
-            this.dgv.ReadOnly = true;
-            this.dgv.RowTemplate.Height = 24;
-            this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv.Size = new System.Drawing.Size(963, 411);
-            this.dgv.TabIndex = 42;
-            this.dgv.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dgv_MouseClick);
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(792, 25);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(55, 33);
-            this.button2.TabIndex = 41;
-            this.button2.Text = "Scan";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(420, 83);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(25, 16);
-            this.label12.TabIndex = 40;
-            this.label12.Text = "To";
-            // 
-            // txttoDate
-            // 
-            this.txttoDate.Location = new System.Drawing.Point(527, 78);
-            this.txttoDate.Margin = new System.Windows.Forms.Padding(2);
-            this.txttoDate.MinimumSize = new System.Drawing.Size(0, 29);
-            this.txttoDate.Name = "txttoDate";
-            this.txttoDate.Size = new System.Drawing.Size(242, 29);
-            this.txttoDate.TabIndex = 39;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(34, 83);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(108, 16);
-            this.label11.TabIndex = 38;
-            this.label11.Text = "Starting From";
-            // 
-            // txtFromDate
-            // 
-            this.txtFromDate.Location = new System.Drawing.Point(160, 76);
-            this.txtFromDate.Margin = new System.Windows.Forms.Padding(2);
-            this.txtFromDate.MinimumSize = new System.Drawing.Size(0, 29);
-            this.txtFromDate.Name = "txtFromDate";
-            this.txtFromDate.Size = new System.Drawing.Size(242, 29);
-            this.txtFromDate.TabIndex = 37;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(420, 34);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(103, 16);
-            this.label10.TabIndex = 36;
-            this.label10.Text = "Employee No";
-            // 
-            // txtEmpNo
-            // 
-            this.txtEmpNo.BackColor = System.Drawing.Color.White;
-            this.txtEmpNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmpNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmpNo.ForeColor = System.Drawing.Color.Black;
-            this.txtEmpNo.Location = new System.Drawing.Point(527, 25);
-            this.txtEmpNo.Margin = new System.Windows.Forms.Padding(20, 32, 20, 20);
-            this.txtEmpNo.MaximumSize = new System.Drawing.Size(333, 130);
-            this.txtEmpNo.MinimumSize = new System.Drawing.Size(0, 13);
-            this.txtEmpNo.Multiline = true;
-            this.txtEmpNo.Name = "txtEmpNo";
-            this.txtEmpNo.Size = new System.Drawing.Size(242, 32);
-            this.txtEmpNo.TabIndex = 35;
-            this.txtEmpNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtEmpNo.TextChanged += new System.EventHandler(this.txtEmpNo_TextChanged);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(34, 30);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(50, 16);
-            this.label9.TabIndex = 34;
-            this.label9.Text = "Name";
-            // 
-            // txtEmpName
-            // 
-            this.txtEmpName.BackColor = System.Drawing.Color.White;
-            this.txtEmpName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmpName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmpName.ForeColor = System.Drawing.Color.Black;
-            this.txtEmpName.Location = new System.Drawing.Point(160, 24);
-            this.txtEmpName.Margin = new System.Windows.Forms.Padding(20, 32, 20, 20);
-            this.txtEmpName.MaximumSize = new System.Drawing.Size(333, 130);
-            this.txtEmpName.MinimumSize = new System.Drawing.Size(0, 13);
-            this.txtEmpName.Multiline = true;
-            this.txtEmpName.Name = "txtEmpName";
-            this.txtEmpName.Size = new System.Drawing.Size(242, 33);
-            this.txtEmpName.TabIndex = 33;
-            this.txtEmpName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(37, 121);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(465, 37);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Find Atendance of All Employees";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // btnFindAttendence
-            // 
-            this.btnFindAttendence.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFindAttendence.ForeColor = System.Drawing.Color.Black;
-            this.btnFindAttendence.Location = new System.Drawing.Point(863, 24);
-            this.btnFindAttendence.Margin = new System.Windows.Forms.Padding(2);
-            this.btnFindAttendence.Name = "btnFindAttendence";
-            this.btnFindAttendence.Size = new System.Drawing.Size(129, 67);
-            this.btnFindAttendence.TabIndex = 1;
-            this.btnFindAttendence.Text = "Find Atendance";
-            this.btnFindAttendence.UseVisualStyleBackColor = true;
-            this.btnFindAttendence.Click += new System.EventHandler(this.btnFindAttendence_Click);
-            // 
-            // btnScan
-            // 
-            this.btnScan.BackColor = System.Drawing.Color.Black;
-            this.btnScan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnScan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.btnScan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnScan.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnScan.Font = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnScan.ForeColor = System.Drawing.Color.White;
-            this.btnScan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnScan.Location = new System.Drawing.Point(468, 16);
-            this.btnScan.Margin = new System.Windows.Forms.Padding(2);
-            this.btnScan.Name = "btnScan";
-            this.btnScan.Size = new System.Drawing.Size(55, 26);
-            this.btnScan.TabIndex = 63;
-            this.btnScan.Text = "Scan ID";
-            this.btnScan.UseVisualStyleBackColor = true;
-            this.btnScan.Click += new System.EventHandler(this.btnScan_Click);
             // 
             // btnScan1
             // 
@@ -778,6 +519,244 @@
             this.txtEmployeeName.TabIndex = 20;
             this.txtEmployeeName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // pnlEmployeeAttendance
+            // 
+            this.pnlEmployeeAttendance.BackColor = System.Drawing.Color.PowderBlue;
+            this.pnlEmployeeAttendance.Controls.Add(this.btnUpdateRemark);
+            this.pnlEmployeeAttendance.Controls.Add(this.label17);
+            this.pnlEmployeeAttendance.Controls.Add(this.txtRemark);
+            this.pnlEmployeeAttendance.Controls.Add(this.btnAttendancToday);
+            this.pnlEmployeeAttendance.Controls.Add(this.dgv);
+            this.pnlEmployeeAttendance.Controls.Add(this.button2);
+            this.pnlEmployeeAttendance.Controls.Add(this.label12);
+            this.pnlEmployeeAttendance.Controls.Add(this.txttoDate);
+            this.pnlEmployeeAttendance.Controls.Add(this.label11);
+            this.pnlEmployeeAttendance.Controls.Add(this.txtFromDate);
+            this.pnlEmployeeAttendance.Controls.Add(this.label10);
+            this.pnlEmployeeAttendance.Controls.Add(this.txtEmpNo);
+            this.pnlEmployeeAttendance.Controls.Add(this.label9);
+            this.pnlEmployeeAttendance.Controls.Add(this.txtEmpName);
+            this.pnlEmployeeAttendance.Controls.Add(this.button3);
+            this.pnlEmployeeAttendance.Controls.Add(this.btnFindAttendence);
+            this.pnlEmployeeAttendance.Location = new System.Drawing.Point(319, 82);
+            this.pnlEmployeeAttendance.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlEmployeeAttendance.Name = "pnlEmployeeAttendance";
+            this.pnlEmployeeAttendance.Size = new System.Drawing.Size(1019, 667);
+            this.pnlEmployeeAttendance.TabIndex = 34;
+            // 
+            // btnUpdateRemark
+            // 
+            this.btnUpdateRemark.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateRemark.ForeColor = System.Drawing.Color.Black;
+            this.btnUpdateRemark.Location = new System.Drawing.Point(863, 171);
+            this.btnUpdateRemark.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUpdateRemark.Name = "btnUpdateRemark";
+            this.btnUpdateRemark.Size = new System.Drawing.Size(129, 35);
+            this.btnUpdateRemark.TabIndex = 46;
+            this.btnUpdateRemark.Text = "Update remark";
+            this.btnUpdateRemark.UseVisualStyleBackColor = true;
+            this.btnUpdateRemark.Click += new System.EventHandler(this.btnUpdateRemark_Click);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Black;
+            this.label17.Location = new System.Drawing.Point(34, 182);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(100, 16);
+            this.label17.TabIndex = 45;
+            this.label17.Text = "Add remarks";
+            // 
+            // txtRemark
+            // 
+            this.txtRemark.Location = new System.Drawing.Point(218, 171);
+            this.txtRemark.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRemark.Multiline = true;
+            this.txtRemark.Name = "txtRemark";
+            this.txtRemark.Size = new System.Drawing.Size(620, 35);
+            this.txtRemark.TabIndex = 44;
+            // 
+            // btnAttendancToday
+            // 
+            this.btnAttendancToday.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAttendancToday.ForeColor = System.Drawing.Color.Black;
+            this.btnAttendancToday.Location = new System.Drawing.Point(527, 124);
+            this.btnAttendancToday.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAttendancToday.Name = "btnAttendancToday";
+            this.btnAttendancToday.Size = new System.Drawing.Size(465, 37);
+            this.btnAttendancToday.TabIndex = 43;
+            this.btnAttendancToday.Text = "Find today\'s attendance";
+            this.btnAttendancToday.UseVisualStyleBackColor = true;
+            // 
+            // dgv
+            // 
+            this.dgv.AllowUserToAddRows = false;
+            this.dgv.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.NullValue = null;
+            this.dgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv.BackgroundColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv.Location = new System.Drawing.Point(29, 228);
+            this.dgv.Margin = new System.Windows.Forms.Padding(2);
+            this.dgv.Name = "dgv";
+            this.dgv.ReadOnly = true;
+            this.dgv.RowTemplate.Height = 24;
+            this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv.Size = new System.Drawing.Size(963, 411);
+            this.dgv.TabIndex = 42;
+            this.dgv.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dgv_MouseClick);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Location = new System.Drawing.Point(792, 25);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(55, 33);
+            this.button2.TabIndex = 41;
+            this.button2.Text = "Scan";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(420, 83);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(25, 16);
+            this.label12.TabIndex = 40;
+            this.label12.Text = "To";
+            // 
+            // txttoDate
+            // 
+            this.txttoDate.Location = new System.Drawing.Point(527, 78);
+            this.txttoDate.Margin = new System.Windows.Forms.Padding(2);
+            this.txttoDate.MinimumSize = new System.Drawing.Size(4, 29);
+            this.txttoDate.Name = "txttoDate";
+            this.txttoDate.Size = new System.Drawing.Size(242, 29);
+            this.txttoDate.TabIndex = 39;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(34, 83);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(108, 16);
+            this.label11.TabIndex = 38;
+            this.label11.Text = "Starting From";
+            // 
+            // txtFromDate
+            // 
+            this.txtFromDate.Location = new System.Drawing.Point(160, 76);
+            this.txtFromDate.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFromDate.MinimumSize = new System.Drawing.Size(4, 29);
+            this.txtFromDate.Name = "txtFromDate";
+            this.txtFromDate.Size = new System.Drawing.Size(242, 29);
+            this.txtFromDate.TabIndex = 37;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(420, 34);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(103, 16);
+            this.label10.TabIndex = 36;
+            this.label10.Text = "Employee No";
+            // 
+            // txtEmpNo
+            // 
+            this.txtEmpNo.BackColor = System.Drawing.Color.White;
+            this.txtEmpNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmpNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmpNo.ForeColor = System.Drawing.Color.Black;
+            this.txtEmpNo.Location = new System.Drawing.Point(527, 25);
+            this.txtEmpNo.Margin = new System.Windows.Forms.Padding(20, 32, 20, 20);
+            this.txtEmpNo.MaximumSize = new System.Drawing.Size(333, 130);
+            this.txtEmpNo.MinimumSize = new System.Drawing.Size(0, 13);
+            this.txtEmpNo.Multiline = true;
+            this.txtEmpNo.Name = "txtEmpNo";
+            this.txtEmpNo.Size = new System.Drawing.Size(242, 32);
+            this.txtEmpNo.TabIndex = 35;
+            this.txtEmpNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEmpNo.TextChanged += new System.EventHandler(this.txtEmpNo_TextChanged);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(34, 30);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(50, 16);
+            this.label9.TabIndex = 34;
+            this.label9.Text = "Name";
+            // 
+            // txtEmpName
+            // 
+            this.txtEmpName.BackColor = System.Drawing.Color.White;
+            this.txtEmpName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmpName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmpName.ForeColor = System.Drawing.Color.Black;
+            this.txtEmpName.Location = new System.Drawing.Point(160, 24);
+            this.txtEmpName.Margin = new System.Windows.Forms.Padding(20, 32, 20, 20);
+            this.txtEmpName.MaximumSize = new System.Drawing.Size(333, 130);
+            this.txtEmpName.MinimumSize = new System.Drawing.Size(0, 13);
+            this.txtEmpName.Multiline = true;
+            this.txtEmpName.Name = "txtEmpName";
+            this.txtEmpName.Size = new System.Drawing.Size(242, 33);
+            this.txtEmpName.TabIndex = 33;
+            this.txtEmpName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.Black;
+            this.button3.Location = new System.Drawing.Point(37, 121);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(465, 37);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "Find Atendance of All Employees";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // btnFindAttendence
+            // 
+            this.btnFindAttendence.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFindAttendence.ForeColor = System.Drawing.Color.Black;
+            this.btnFindAttendence.Location = new System.Drawing.Point(863, 24);
+            this.btnFindAttendence.Margin = new System.Windows.Forms.Padding(2);
+            this.btnFindAttendence.Name = "btnFindAttendence";
+            this.btnFindAttendence.Size = new System.Drawing.Size(129, 67);
+            this.btnFindAttendence.TabIndex = 1;
+            this.btnFindAttendence.Text = "Find Atendance";
+            this.btnFindAttendence.UseVisualStyleBackColor = true;
+            this.btnFindAttendence.Click += new System.EventHandler(this.btnFindAttendence_Click);
+            // 
             // pnlViewDetailsofCustomers
             // 
             this.pnlViewDetailsofCustomers.BackColor = System.Drawing.Color.PowderBlue;
@@ -827,7 +806,7 @@
             // 
             this.metroDateTime4.Location = new System.Drawing.Point(556, 96);
             this.metroDateTime4.Margin = new System.Windows.Forms.Padding(2);
-            this.metroDateTime4.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTime4.MinimumSize = new System.Drawing.Size(4, 29);
             this.metroDateTime4.Name = "metroDateTime4";
             this.metroDateTime4.Size = new System.Drawing.Size(230, 29);
             this.metroDateTime4.TabIndex = 51;
@@ -848,7 +827,7 @@
             // 
             this.metroDateTime5.Location = new System.Drawing.Point(170, 94);
             this.metroDateTime5.Margin = new System.Windows.Forms.Padding(2);
-            this.metroDateTime5.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTime5.MinimumSize = new System.Drawing.Size(4, 29);
             this.metroDateTime5.Name = "metroDateTime5";
             this.metroDateTime5.Size = new System.Drawing.Size(230, 29);
             this.metroDateTime5.TabIndex = 49;
@@ -951,7 +930,7 @@
             this.lblRequestCount.BackColor = System.Drawing.Color.Red;
             this.lblRequestCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRequestCount.ForeColor = System.Drawing.Color.White;
-            this.lblRequestCount.Location = new System.Drawing.Point(265, 311);
+            this.lblRequestCount.Location = new System.Drawing.Point(267, 244);
             this.lblRequestCount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRequestCount.Name = "lblRequestCount";
             this.lblRequestCount.Size = new System.Drawing.Size(20, 24);
@@ -1315,7 +1294,7 @@
             this.tileEmployeeAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.tileEmployeeAttendance.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tileEmployeeAttendance.ForeColor = System.Drawing.Color.White;
-            this.tileEmployeeAttendance.Location = new System.Drawing.Point(26, 153);
+            this.tileEmployeeAttendance.Location = new System.Drawing.Point(26, 311);
             this.tileEmployeeAttendance.Name = "tileEmployeeAttendance";
             this.tileEmployeeAttendance.Padding = new System.Windows.Forms.Padding(5);
             this.tileEmployeeAttendance.Size = new System.Drawing.Size(270, 67);
@@ -1331,7 +1310,7 @@
             this.tileDetailsofCurrentCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.tileDetailsofCurrentCustomer.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tileDetailsofCurrentCustomer.ForeColor = System.Drawing.Color.White;
-            this.tileDetailsofCurrentCustomer.Location = new System.Drawing.Point(26, 228);
+            this.tileDetailsofCurrentCustomer.Location = new System.Drawing.Point(26, 158);
             this.tileDetailsofCurrentCustomer.Name = "tileDetailsofCurrentCustomer";
             this.tileDetailsofCurrentCustomer.Padding = new System.Windows.Forms.Padding(5);
             this.tileDetailsofCurrentCustomer.Size = new System.Drawing.Size(270, 67);
@@ -1347,7 +1326,7 @@
             this.tileEmployeeLeaveRequests.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.tileEmployeeLeaveRequests.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tileEmployeeLeaveRequests.ForeColor = System.Drawing.Color.White;
-            this.tileEmployeeLeaveRequests.Location = new System.Drawing.Point(26, 302);
+            this.tileEmployeeLeaveRequests.Location = new System.Drawing.Point(26, 237);
             this.tileEmployeeLeaveRequests.Name = "tileEmployeeLeaveRequests";
             this.tileEmployeeLeaveRequests.Padding = new System.Windows.Forms.Padding(5);
             this.tileEmployeeLeaveRequests.Size = new System.Drawing.Size(270, 67);
@@ -1363,7 +1342,7 @@
             this.btnManageRooms.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnManageRooms.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageRooms.ForeColor = System.Drawing.Color.White;
-            this.btnManageRooms.Location = new System.Drawing.Point(26, 378);
+            this.btnManageRooms.Location = new System.Drawing.Point(26, 384);
             this.btnManageRooms.Name = "btnManageRooms";
             this.btnManageRooms.Padding = new System.Windows.Forms.Padding(5);
             this.btnManageRooms.Size = new System.Drawing.Size(270, 67);
@@ -1379,7 +1358,7 @@
             this.metroTile1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.metroTile1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.metroTile1.ForeColor = System.Drawing.Color.White;
-            this.metroTile1.Location = new System.Drawing.Point(26, 454);
+            this.metroTile1.Location = new System.Drawing.Point(26, 458);
             this.metroTile1.Name = "metroTile1";
             this.metroTile1.Padding = new System.Windows.Forms.Padding(5);
             this.metroTile1.Size = new System.Drawing.Size(270, 67);
@@ -1402,6 +1381,7 @@
             this.button7.TabIndex = 60;
             this.button7.Text = "ex";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -1497,7 +1477,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.ClientSize = new System.Drawing.Size(1362, 764);
+            this.ClientSize = new System.Drawing.Size(1354, 756);
             this.ControlBox = false;
             this.Controls.Add(this.pnlManageEmployee);
             this.Controls.Add(this.pnlEmployeeAttendance);
@@ -1528,10 +1508,10 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.pnlManageEmployee.ResumeLayout(false);
             this.pnlManageEmployee.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picEmployeePicture)).EndInit();
             this.pnlEmployeeAttendance.ResumeLayout(false);
             this.pnlEmployeeAttendance.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEmployeePicture)).EndInit();
             this.pnlViewDetailsofCustomers.ResumeLayout(false);
             this.pnlViewDetailsofCustomers.PerformLayout();
             this.pnlLeaveRequests.ResumeLayout(false);
@@ -1644,7 +1624,6 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnScan;
 
     }
 }

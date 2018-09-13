@@ -49,7 +49,18 @@ namespace AttendanceRecorder
 
         private void dgvNotifications_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            using (DBConnect db = new DBConnect())
+            {
+                DialogResult d  = MessageBox.Show("Are you sure you want to delete this notification..?","Confirm",MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
+                if (d == DialogResult.Yes)
+                {
+                    string q = "DELETE FROM `employeenotification` WHERE id = '" + dgvNotifications.CurrentRow.Cells[1].Value.ToString() + "'";
+                    MySqlCommand cmd = new MySqlCommand(q, db.con);
+                    cmd.ExecuteNonQuery();
+                    dgvNotifications.DataSource = loadNotifications(); 
+                }
+                
+            }
         }
 
         private void EmployeeNotifications_MouseDoubleClick(object sender, MouseEventArgs e)
