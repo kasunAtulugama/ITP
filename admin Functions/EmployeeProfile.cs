@@ -117,9 +117,10 @@ namespace AttendanceRecorder
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            Login l = new Login();
-            l.Show();
-            this.Hide();
+            ////this.Close();
+            //Login l = new Login();
+            //l.Show();
+            //this.Hide();
             
         }
 

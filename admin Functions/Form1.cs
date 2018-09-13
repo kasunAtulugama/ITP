@@ -744,7 +744,7 @@ namespace AttendanceRecorder
 
                     dgvLeaverequests.DataSource = loadLeaveRequests();
                 
-            }
+            }ValidationManageEmployeeAdd();
     
         }
 
