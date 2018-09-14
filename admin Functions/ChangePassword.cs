@@ -58,19 +58,19 @@ namespace AttendanceRecorder
                     }
                     else
                     {
-                        MessageBox.Show("Make sure you entered valid current password", "Invalid Password", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Current Password is not valid", "Invalid Password", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         btnClear_Click(sender, e);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("New password does not match with re-entered new password", "Invalid password", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("New password does not match. Please re-enter", "Invalid password", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     btnClear_Click(sender, e);
                 } 
             }
             else
             {
-                MessageBox.Show("New password should be at least 4 characters", "Invalid Password", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Password should be at least 4 characters", "Invalid Password", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

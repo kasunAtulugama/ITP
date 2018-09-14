@@ -1379,7 +1379,7 @@
             this.button7.Padding = new System.Windows.Forms.Padding(5);
             this.button7.Size = new System.Drawing.Size(270, 67);
             this.button7.TabIndex = 60;
-            this.button7.Text = "ex";
+            this.button7.Text = "Salary Management";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 

@@ -607,6 +607,12 @@ namespace AttendanceRecorder
         private void btnMyProfile_Click(object sender, EventArgs e)
         {
             EmployeeProfile f = new EmployeeProfile(loggedEmployeeID);
+            pnlEmployeeAttendance.Hide();
+            pnlLeaveRequests.Hide();
+            pnlManageEmployee.Hide();
+            pnlViewDetailsofCustomers.Hide();
+            pnlWelcome.Hide();
+           
             f.Show();
         }
 

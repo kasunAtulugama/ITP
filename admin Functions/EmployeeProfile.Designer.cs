@@ -611,12 +611,12 @@
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(731, 653);
             this.ControlBox = false;
+            this.Controls.Add(this.pnlrequestLeave);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnRequestLeave);
             this.Controls.Add(this.btnMyAttendence);
             this.Controls.Add(this.btnMyProfile);
             this.Controls.Add(this.pnlMyprofile);
-            this.Controls.Add(this.pnlrequestLeave);
             this.Controls.Add(this.pnlMyattendence);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "EmployeeProfile";

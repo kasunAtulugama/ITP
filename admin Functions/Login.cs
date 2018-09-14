@@ -85,7 +85,7 @@ namespace AttendanceRecorder
                 if (ip.AddressFamily.ToString() == "InterNetwork")
                 {
                     myIp = ip.ToString();
-                    MessageBox.Show(myIp);
+                    //MessageBox.Show(myIp);
                 }
             }
 
